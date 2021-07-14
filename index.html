@@ -23,21 +23,12 @@ $(document).ready(function(){
     var x = $("contactForm").serializeArray();
     $.each(x, function(i, field){
      $("#results").append(field.name + ":" + field.value + " ");
+        utag.link({"#results"});
     });
   });
 });
         
-        </script>
-        <script>
-        jQuery('#contactForm').on('click', 'submitButton', function(e) {
-    utag.link({
-        "name"     : '',
-        "email"  : '',
-        "phone": '',
-        "message" : ''
-    })
-});
-        </script>
+
     </head>
     <body id="page-top">
         <script type="text/javascript">
