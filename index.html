@@ -23,11 +23,19 @@ $(document).ready(function(){
     var x = $("contactForm").serializeArray();
     $.each(x, function(i, field){
      $("#results").append(field.name + ":" + field.value + " ");
-        utag.link({"#results"});
+       
     });
   });
 });
+        jQuery('#contactForm').on('mousedown', 'submitButton', function(e) {
+    utag.link({
+        email: "erp@ecapacity.dk",
+    message: "this is very boring test",
+    name: "Emil ",
+    phone: "123123123123"
         
+    })
+});
 
     </head>
     <body id="page-top">
