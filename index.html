@@ -17,29 +17,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!--jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-$(document).ready(function(){
-  $("submitButton").click(function(){
-    var x = $("contactForm").serializeArray();
-    $.each(x, function(i, field){
-     $("#results").append(field.name + ":" + field.value + " ");
-       
-    });
-  });
-});
-          </script>
-          <script>
-     
-        jQuery('#contactForm').on('mousedown', 'submitButton', function(e) {
-    utag.link({
-        email: "erp@ecapacity.dk",
-    message: "this is very boring test",
-    name: "Emil ",
-    phone: "123123123123"
-        
-    })
-});
-        </script>
+
+    
     </head>
     <body id="page-top">
         <script type="text/javascript">
